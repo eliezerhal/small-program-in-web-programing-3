@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <title>ex3</title>
+
+    <style>
+        .text{
+            text-align: left;
+        }
+        .design {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #b0c4de;
+            height:150px;
+        }
+
+        #home {
+            width:1600px;
+            height:400px;
+        }
+    </style>
+
+    <script src="ex3.js">
+    </script>
+</head>
+<body>
+<form>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12" style="text-align: left">
+                <a href="readme.html">link to my readme</a>
+                <div class="design">
+                    <h1>Internet Programing - Exercise 3</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="base" style="display: block">
+            <div class="row">
+                <div class="col-12" style="text-align: left">
+                    <div id="error" style="display: none" class="alert alert-warning">
+                        <div >
+                            <h2>Please corect the folowing problems:</h2>
+                            <p id="errors"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6" style="text-align: left">
+                <div class="form-group">
+                    <h2>Weather forecast site</h2>
+                    <label for="massageg0">City</label>
+                    <input type="text" class="form-control" id="massageg0">
+                    <label for="massageg1">Longitube</label>
+                    <input type="number" class="form-control" id="massageg1">
+                    <label for="massageg2">Latitude</label>
+                    <input type="number" class="form-control" id="massageg2">
+                </div>
+                <button type="button" id = "city_button" class ="btn btn-primary">Add</button>
+            </div>
+
+            <div class="col-12" style="text-align: left">
+                <div id="table" style="display: none" class="alert alert-warning">
+                    <div >
+                        <p id="add"></p>
+                    </div>
+                    <button type="button" id = "dellete_button" class ="btn btn-primary">Dellete</button>
+                    <button type="button" id = "send_button" class ="btn btn-primary">Send</button>
+                </div>
+            </div>
+
+            <div class="col-md-6" id ="show_the_weather" style="display: none">
+                <div class ="alert alert-success" style="overflow-x:auto">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th scope="col" id="Name_Of_City"></th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Weather</th>
+                            <th scope="col">Temp_max</th>
+                            <th scope="col">Temp_min</th>
+                            <th scope="col">Wind10m_max</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr id="Day1"><th></th>
+                        </tr>
+                        <tr id="Day2"><th></th>
+                        </tr>
+                        <tr id="Day3"><th></th>
+                        </tr>
+                        <tr id="Day4"><th></th>
+                        </tr>
+                        <tr id="Day5"><th></th>
+                        </tr>
+                        <tr id="Day6"><th></th>
+                        </tr>
+                        <tr id="Day7"><th></th>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="col-md-6" id ="errorServer" style="display: none">
+                <p id="err"></p>
+            </div>
+
+            <div class="col-md-6" id ="image" style="display: none">
+                <figure class="figure">
+                    <img src="my_image.jpg" alt="Image of weather" class="figure-img img-fluid rounded">
+                    <figcaption class="figure-caption">The picture of weather.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
